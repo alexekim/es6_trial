@@ -1,5 +1,29 @@
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: url(http://alexekim.github.io/images/plane.jpg) no-repeat center center fixed;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 h1 {
-  font-size: 72px;
+  font-family: "Nunito", sans-serif;
+}
+
+.headerLinksDiv {
+  padding: 20px;
+}
+
+.headerLink {
+  font-size: 40px;
+  color: #4a4a4a;
+}
+
+.headerLink:hover {
+  color: #268865;
 }
 
 /*# sourceMappingURL=sassfile.css.map */

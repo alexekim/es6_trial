@@ -12,7 +12,11 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: url(http://alexekim.github.io/images/plane.jpg) no-repeat center center fixed;
+  // background: url(http://alexekim.github.io/images/plane.jpg) no-repeat center center fixed;
+  background-image: url(http://alexekim.github.io/images/plane.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   min-width: 100%;
   min-height: 100%;

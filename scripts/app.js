@@ -18,15 +18,22 @@
 //   console.log("image loaded");
 // })
 
-var src = document.getElementById("bg").style.backgroundImage;
-var url = src.match(/\((.*?)\)/)[1].replace(/('|")/g,'');
+// var x = $('#bg').attr('background-image')
+//
+// $('#bg').attr('src', 'http://alexekim.github.io/images/plane.jpg').on('load', function() {
+//    $(this).remove(); // prevent memory leaks as @benweet suggested
+//    alert("asdf");
+//    // $('body').css('background-image', 'url(http://alexekim.github.io/images/plane.jpg)');
+// });
 
-var img = new Image();
-img.onload = function(){
-  alert('image loaded');
-}
-
-img.src = url;
-if(img.complete){
-  img.onload();
-}
+var $div = $('#bg')
+var bg = $div.css('background-image');
+  if (bg) {
+    var src = bg.replace(/(^url\()|(\)$|[\"\'])/g, ''),
+      $img = $('<img>').attr('src', src).on('load', function() {
+        // do something, maybe:
+        // $div.fadeIn();
+        // alert();
+        document.getElementById("app").style.display = "block";
+      });
+  }

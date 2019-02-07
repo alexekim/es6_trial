@@ -1,3 +1,7 @@
+#app {
+  display: none;
+}
+
 #bg {
   z-index: -1;
   position: fixed;

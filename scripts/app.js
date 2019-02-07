@@ -32,7 +32,6 @@ var bg = $div.css('background-image');
     var src = bg.replace(/(^url\()|(\)$|[\"\'])/g, ''),
       $img = $('<img>').attr('src', src).on('load', function() {
         // do something, maybe:
-        // $div.fadeIn();
         // alert();
         document.getElementById("app").style.display = "block";
       });

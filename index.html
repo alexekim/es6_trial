@@ -31,7 +31,7 @@
   <div id="app">
     <!-- <div class="container"> -->
       <div class="row">
-        <div @mouseover="changeEmoji()" @mouseleave="restoreEmoji()" tabindex="0" class="col l11">
+        <div @mouseover="changeEmoji()" @mouseleave="restoreEmoji()" tabindex="0" class="col s8">
           <h1 id="header">
             {{ name }}
             <!-- <span id="headerEmoji"> -->
@@ -42,7 +42,7 @@
             <!-- </span> -->
           </h1>
         </div>
-        <div class="col l1">
+        <div class="col s4">
           <div class="headerLinksDiv">
             <a
               v-for="link in headerLinks"

@@ -26,7 +26,7 @@
 //    // $('body').css('background-image', 'url(http://alexekim.github.io/images/plane.jpg)');
 // });
 
-var $div = $('#bg')
+var $div = $('#bg');
 var bg = $div.css('background-image');
   if (bg) {
     var src = bg.replace(/(^url\()|(\)$|[\"\'])/g, ''),
